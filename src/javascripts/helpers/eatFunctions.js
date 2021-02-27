@@ -6,7 +6,7 @@ function wholeFoods() {
 
 function junkFood() {
   let full = Number(document.querySelector('#full').innerHTML);
-  full = Math.min(full - 3, 100);
+  full = Math.max(full - 3, 0);
   document.querySelector('#full').innerHTML = `${full}`;
 }
 
