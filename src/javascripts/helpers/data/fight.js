@@ -3,18 +3,26 @@ let strength = 100;
 
 const getStrength = () => strength;
 
-const flee = () => {
-  strength += 1;
+const addStrength = (amount) => {
+  const initialAmount = strength;
+  strength += amount;
   if (strength > 100) {
     strength = 100;
   }
-};
-
-const fight = () => {
-  strength -= 10;
   if (strength < 0) {
     strength = 0;
   }
+  return strength - initialAmount;
 };
 
-export { flee, fight, getStrength };
+const flee = () => {
+  addStrength(1);
+};
+
+const fight = () => {
+  addStrength(-10);
+};
+
+export {
+  flee, fight, addStrength, getStrength
+};

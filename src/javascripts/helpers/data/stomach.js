@@ -1,19 +1,17 @@
 let full = 100;
 
-const feedHealthy = () => {
-  full += 10;
+const addFood = (amount) => {
+  const initialAmount = full;
+  full += amount;
   if (full > 100) {
     full = 100;
   }
-};
-
-const feedJunk = () => {
-  full -= 3;
   if (full < 0) {
-    full = 100;
+    full = 0;
   }
+  return full - initialAmount;
 };
 
 const getFullness = () => full;
 
-export { feedHealthy, feedJunk, getFullness };
+export { addFood, getFullness };

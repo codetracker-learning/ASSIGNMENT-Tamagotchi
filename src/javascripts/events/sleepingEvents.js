@@ -1,6 +1,7 @@
 // sleepingEvents.js
 import { nap, slumber } from '../helpers/data/energy';
 import displaySleep from '../components/sleepQuad';
+import displayProgress from '../components/progressBar';
 
 const listenSleeping = (e) => {
   console.warn(e.target.id);
@@ -19,6 +20,7 @@ const listenSleeping = (e) => {
   }
   if (refresh) {
     displaySleep();
+    displayProgress();
   }
 };
 

@@ -3,18 +3,26 @@ let fun = 50;
 
 const getFun = () => fun;
 
-const superFun = () => {
-  fun += 50;
+const addFun = (amount) => {
+  const initialAmount = fun;
+  fun += amount;
   if (fun > 100) {
     fun = 100;
   }
+  if (fun < 0) {
+    fun = 0;
+  }
+  return fun - initialAmount;
+};
+
+const superFun = () => {
+  addFun(50);
 };
 
 const regularFun = () => {
-  fun += 2;
-  if (fun > 100) {
-    fun = 100;
-  }
+  addFun(2);
 };
 
-export { superFun, regularFun, getFun };
+export {
+  superFun, regularFun, addFun, getFun
+};

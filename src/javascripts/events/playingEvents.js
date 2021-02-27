@@ -1,24 +1,24 @@
 // playingEvents.js
-import { superFun, regularFun } from '../helpers/data/fun';
-import displayFun from '../components/playQuad';
+import { bigFun, littleFun } from '../helpers/calculators/calculator';
+import displayQuads from '../components/allQuads';
 
 const listenPlaying = (e) => {
   console.warn(e.target.id);
   let refresh = false;
   switch (e.target.id) {
     case 'slide':
-      superFun();
+      bigFun();
       refresh = true;
       break;
     case 'hoola':
-      regularFun();
+      littleFun();
       refresh = true;
       break;
     default:
       break;
   }
   if (refresh) {
-    displayFun();
+    displayQuads();
   }
 };
 

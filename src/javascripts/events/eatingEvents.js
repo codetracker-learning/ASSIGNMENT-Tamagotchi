@@ -1,24 +1,24 @@
 // eatingEvents.js
-import { feedHealthy, feedJunk } from '../helpers/data/stomach';
-import displayEat from '../components/eatQuad';
+import { eatHealthy, eatJunk } from '../helpers/calculators/calculator';
+import displayQuads from '../components/allQuads';
 
 const listenEating = (e) => {
   console.warn(e.target.id);
   let refresh = false;
   switch (e.target.id) {
     case 'healthy':
-      feedHealthy();
+      eatHealthy();
       refresh = true;
       break;
     case 'junk':
-      feedJunk();
+      eatJunk();
       refresh = true;
       break;
     default:
       break;
   }
   if (refresh) {
-    displayEat();
+    displayQuads();
   }
 };
 

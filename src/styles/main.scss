@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import './progress.css';
 @import './eat.css';
 @import './play.css';
 @import './fight.css';
@@ -13,20 +14,12 @@ body {
   width: 100vw;
 }
 
-div.progress, div.pet {
+div.pet {
   display: block;
   width: 100vw;
   height: 200px;
   float: left;
   background-color: rgb(177, 190, 119); 
-}
-
-div.progress, div.pet {
-  display: block;
-  width: 100vw;
-  height: 200px;
-  float: left;
-  background-color: rgb(51, 115, 134); 
 }
 
 .quad {
