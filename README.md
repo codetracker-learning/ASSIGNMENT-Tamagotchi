@@ -1,4 +1,7 @@
 # Tamagotchi
+
+[Check out a sample](https://github.com/drteresavasquez/Tamagotchi-Remix)
+
 Remember Tamagotchi's?  They looked something like this:
 
 ![Tamagotchi](./tamagotchi.jpg)
