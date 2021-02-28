@@ -1,5 +1,7 @@
+import printToDom from '../helpers/printToDom';
+
 function eatCard() {
-  document.querySelector('#eat').innerHTML = `
+  const domString = `
   <div class="card text-center">
   <div class="card-header">
     Eat
@@ -10,6 +12,7 @@ function eatCard() {
     <button type="button" id="junkFood" href="#" class="btn btn-primary">Junk Food</button>
   </div>
 </div>`;
+  printToDom('#eat', domString);
 }
 
 export default eatCard;

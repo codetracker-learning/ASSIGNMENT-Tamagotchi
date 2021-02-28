@@ -1,5 +1,7 @@
+import printToDom from '../helpers/printToDom';
+
 function fightCard() {
-  document.querySelector('#fight').innerHTML = `
+  const domString = `
   <div class="card text-center">
   <div class="card-header">
     Fight
@@ -10,6 +12,7 @@ function fightCard() {
     <button type="button" id="attack" href="#" class="btn btn-primary">Attack!</button>
   </div>
 </div>`;
+  printToDom('#fight', domString);
 }
 
 export default fightCard;

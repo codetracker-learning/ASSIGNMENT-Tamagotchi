@@ -1,5 +1,7 @@
+import printToDom from '../helpers/printToDom';
+
 function sleepCard() {
-  document.querySelector('#sleep').innerHTML = `
+  const domString = `
   <div class="card text-center">
             <div class="card-header">
               Sleep
@@ -10,6 +12,7 @@ function sleepCard() {
               <button type="button" id="slumber" href="#" class="btn btn-primary">Slumber</button>
             </div>
           </div>`;
+  printToDom('#sleep', domString);
 }
 
 export default sleepCard;
