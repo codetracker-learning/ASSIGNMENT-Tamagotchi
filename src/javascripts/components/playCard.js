@@ -1,5 +1,7 @@
+import printToDom from '../helpers/printToDom';
+
 function playCard() {
-  document.querySelector('#play').innerHTML = `
+  const domString = `
   <div class="card text-center">
             <div class="card-header">
               Play
@@ -10,6 +12,7 @@ function playCard() {
               <button type="button" id="slightlyFun" href="#" class="btn btn-primary">Slightly Fun Game</button>
             </div>
           </div>`;
+  printToDom('#play', domString);
 }
 
 export default playCard;
