@@ -1,9 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "./eat.css";
+@import "./play.css";
+@import "./fight.css";
+@import "./sleep.css";
 
-body {
-  background-color: antiquewhite;
-  color: brown;
-  text-align: center;
-  margin-top: 100px;
+#app{
+  background-color:#dde7eb;
 }
