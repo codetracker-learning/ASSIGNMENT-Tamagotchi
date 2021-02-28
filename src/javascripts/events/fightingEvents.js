@@ -1,27 +1,24 @@
 // fightingEvents.js
-import { flee, fight } from '../helpers/data/fight';
 import displayQuads from '../components/allQuads';
-import { addEnergy } from '../helpers/data/energy';
-import { addFun } from '../helpers/data/fun';
+import { violence, flee } from '../helpers/calculators/calculator';
+import isKaput from '../helpers/calculators/kaput';
 
 const listenFighting = (e) => {
   console.warn(e.target.id);
   let refresh = false;
-  switch (e.target.id) {
-    case 'fight-btn':
-      fight();
-      addEnergy(-10);
-      addFun(-10);
-      refresh = true;
-      break;
-    case 'flee-btn':
-      flee();
-      addEnergy(-15);
-      addFun(-15);
-      refresh = true;
-      break;
-    default:
-      break;
+  if (!isKaput()) {
+    switch (e.target.id) {
+      case 'fight-btn':
+        violence();
+        refresh = true;
+        break;
+      case 'flee-btn':
+        flee();
+        refresh = true;
+        break;
+      default:
+        break;
+    }
   }
   if (refresh) {
     displayQuads();
