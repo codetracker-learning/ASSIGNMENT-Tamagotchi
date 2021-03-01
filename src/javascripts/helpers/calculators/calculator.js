@@ -1,13 +1,14 @@
 import { addStrength } from '../data/fight';
-import { addEnergy } from '../data/energy';
+import { getEnergy, addEnergy } from '../data/energy';
 import { addFun } from '../data/fun';
 import { addFood } from '../data/stomach';
 import getRandom from './random';
 
 const eatHealthy = () => {
   const addedFood = addFood(getRandom(5, 10));
-  console.warn(`Adding: ${addedFood}`);
-  addEnergy(-0.75 * addedFood);
+  if (getEnergy > 20) {
+    addEnergy(-0.75 * addedFood);
+  }
   addStrength(addedFood * 0.5);
 };
 
@@ -26,9 +27,11 @@ const littleFun = () => {
 
 const violence = () => {
   const addedStrength = addStrength(-getRandom(5, 10));
-  addEnergy(0.5 * addedStrength);
-  addFood(addedStrength);
-  addFun(addedStrength * 1.2);
+  if (getEnergy > 20) {
+    addEnergy(0.5 * addedStrength);
+  } else addEnergy(0.2 * addedStrength);
+  addFood(0.5 * addedStrength);
+  addFun(1.2 * addedStrength);
 };
 
 const flee = () => {
@@ -38,7 +41,16 @@ const flee = () => {
   addFun(-6 * addedStrength);
 };
 
+const nap = () => {
+  addEnergy(getRandom(10, 25));
+};
+
+const slumber = () => {
+  addEnergy(getRandom(30, 50));
+};
+
 export {
   eatHealthy, eatJunk, bigFun, littleFun,
-  violence, flee
+  violence, flee,
+  nap, slumber
 };

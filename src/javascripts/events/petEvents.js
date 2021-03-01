@@ -1,9 +1,10 @@
 // petEvents.js
 import addPet from '../components/forms/petForm';
-import drawPet from '../components/pet';
 import {
-  getPetName, getPetUrl, setPetName, setPetUrl
+  setPetName, setPetUrl
 } from '../helpers/data/petData';
+import startOver from '../helpers/calculators/startOver';
+import displayQuad from '../components/allQuads';
 
 const listenPets = (e) => {
   console.warn(e.target.id);
@@ -19,11 +20,9 @@ const listenPets = (e) => {
       petUrl = document.querySelector('#pet-img-url').value;
       setPetName(petName);
       setPetUrl(petUrl);
-    } else {
-      petName = getPetName();
-      petUrl = getPetUrl();
+      startOver();
+      displayQuad();
     }
-    drawPet(petName, petUrl);
   }
 };
 

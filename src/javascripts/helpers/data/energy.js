@@ -15,14 +15,14 @@ const addEnergy = (amount) => {
   return energy - initialAmount;
 };
 
-const nap = () => {
-  addEnergy(50);
+const setEnergy = (amount) => {
+  energy = amount;
+  if (energy > 100) {
+    energy = 100;
+  }
+  if (energy < 0) {
+    energy = 0;
+  }
 };
 
-const slumber = () => {
-  addEnergy(60);
-};
-
-export {
-  nap, slumber, addEnergy, getEnergy
-};
+export { addEnergy, setEnergy, getEnergy };

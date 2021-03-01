@@ -12,6 +12,16 @@ const addFood = (amount) => {
   return full - initialAmount;
 };
 
+const setFullness = (amount) => {
+  full = amount;
+  if (full > 100) {
+    full = 100;
+  }
+  if (full < 0) {
+    full = 0;
+  }
+};
+
 const getFullness = () => full;
 
-export { addFood, getFullness };
+export { addFood, getFullness, setFullness };

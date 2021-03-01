@@ -2,7 +2,7 @@ div.progress {
   position: absolute;
   width: 40vw;
   height: 80px;
-  overflow: auto;
+  overflow: visible;
   top: 0;
   left: 0;
   bottom: 0;
@@ -13,11 +13,19 @@ div.progress {
   min-width: 200px;
   max-width: 400px;
 }
-
+.progress h1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -150px auto 0;
+  font-size: 6em;
+  text-shadow: 2px 2px #00ff00;
+}
 div.progress-container {
   width: 90%;
   margin: 20px auto;
-  
 }
 
 div.life-score {

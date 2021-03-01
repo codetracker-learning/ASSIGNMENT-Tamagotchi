@@ -15,6 +15,16 @@ const addStrength = (amount) => {
   return strength - initialAmount;
 };
 
+const setStrength = (amount) => {
+  strength = amount;
+  if (strength > 100) {
+    strength = 100;
+  }
+  if (strength < 0) {
+    strength = 0;
+  }
+};
+
 const flee = () => {
   addStrength(1);
 };
@@ -24,5 +34,6 @@ const fight = () => {
 };
 
 export {
-  flee, fight, addStrength, getStrength
+  flee, fight, addStrength, getStrength,
+  setStrength
 };

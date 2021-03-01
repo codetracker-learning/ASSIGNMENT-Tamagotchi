@@ -1,5 +1,5 @@
 // sleepingEvents.js
-import { nap, slumber } from '../helpers/data/energy';
+import { nap, slumber } from '../helpers/calculators/calculator';
 import displayQuads from '../components/allQuads';
 import isKaput from '../helpers/calculators/kaput';
 

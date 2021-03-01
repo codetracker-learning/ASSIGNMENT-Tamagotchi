@@ -15,14 +15,14 @@ const addFun = (amount) => {
   return fun - initialAmount;
 };
 
-const superFun = () => {
-  addFun(50);
+const setFun = (amount) => {
+  fun = amount;
+  if (fun > 100) {
+    fun = 100;
+  }
+  if (fun < 0) {
+    fun = 0;
+  }
 };
 
-const regularFun = () => {
-  addFun(2);
-};
-
-export {
-  superFun, regularFun, addFun, getFun
-};
+export { addFun, getFun, setFun };

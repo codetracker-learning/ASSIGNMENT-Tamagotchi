@@ -6,8 +6,8 @@ const displayPlay = () => {
   <h2>Play</h2>
   <div class="q-status" id="fun">${Math.round(getFun())}</div>
   <div class="buttons">
-    <button type="button" class="btn btn-primary" id="slide">Water Slide!</button>
-    <button type="button" class="btn btn-danger" id="hoola">Hoola Hoop</button>
+    <button type="button" class="btn btn-primary" id="slide">Really Fun!</button>
+    <button type="button" class="btn btn-danger" id="hoola">Kinda fun</button>
   </div>
   </div>`;
   printDom('#play', playStr);
