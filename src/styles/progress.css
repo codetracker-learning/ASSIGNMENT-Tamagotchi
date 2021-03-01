@@ -1,0 +1,41 @@
+div.progress {
+  position: absolute;
+  width: 40vw;
+  height: 80px;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 300px auto;
+  background-color: rgb(177, 190, 119); 
+  border-radius: 3em;
+  min-width: 200px;
+  max-width: 400px;
+}
+.progress h1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -150px auto 0;
+  font-size: 6em;
+  text-shadow: 2px 2px #00ff00;
+}
+div.progress-container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+div.life-score {
+  margin: 15px auto;
+  font-size: 1.25em;
+}
+
+#pet-progress {
+  top: 10%;
+  margin: auto;
+  width: 75%;
+  height: 20px;
+}

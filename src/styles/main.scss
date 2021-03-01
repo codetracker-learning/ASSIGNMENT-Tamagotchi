@@ -1,9 +1,30 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import './progress.css';
+@import './eat.css';
+@import './play.css';
+@import './fight.css';
+@import './sleep.css';
+@import './pet.css';
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  color: black;
   text-align: center;
-  margin-top: 100px;
+}
+
+.quad {
+  border: 1px solid black;
+  display: grid;
+  width: 50%;
+  height: 400px; 
+  float: left;
+  font-size: 1.2em;
+}
+
+.quad h2 {
+  margin: 30px auto .1em;
+}
+
+.quad .q-status {
+margin: 0 0 .1em;
 }
