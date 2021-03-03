@@ -2,7 +2,8 @@
 
 const defaultPetName = 'Fido';
 const defaultPetUrl = 'https://www.clipartkey.com/mpngs/m/11-119414_easy-clipart-dog-easy-simple-dog-drawing.png';
-const kaputUrl = '../../src/images/stone.jpg';
+const kaputUrl = 'http://clipart-library.com/images/ki8ozrkeT.jpg';
+
 let petName = defaultPetName;
 let petUrl = defaultPetUrl;
 
