@@ -1,6 +1,15 @@
 # Tamagotchi
-Remember Tamagotchi's?  They looked something like this:
 
+Tamagotchi Loom video
+[Tamagotchi Loom video](https://www.loom.com/share/48b9a814d8dd47c493e3e92667061c7e)
+
+Tamagotchi netlify
+[Tamagotchi Netlify](https://juan-davila-tamagochi.netlify.app/)
+
+Tamagotchi GitHub link
+[Tamagotchi GitHub](https://github.com/JuanDavila1101/ASSIGNMENT-Tamagotchi)
+
+Remember Tamagotchi's?  They looked something like this:
 ![Tamagotchi](./tamagotchi.jpg)
 
 In case you lived under a rock in the 90s a Tamagotchi was the first "digital virtual pet".  It had three buttons and 8 different menus.  After activating it an egg would hatch and then you would be responsible for keeping your pet alive.  Your pet could do things like eat, sleep, play, get sick, get medicine, and poop.  They sold over 82 million of them before 2017.
