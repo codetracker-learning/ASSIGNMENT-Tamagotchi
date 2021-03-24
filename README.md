@@ -1,13 +1,20 @@
 # Tamagotchi
 
-Tamagotchi Loom video
+### Tamagotchi Loom video
 [Tamagotchi Loom video](https://www.loom.com/share/48b9a814d8dd47c493e3e92667061c7e)
 
-Tamagotchi netlify
+### Tamagotchi netlify
 [Tamagotchi Netlify](https://juan-davila-tamagochi.netlify.app/)
 
-Tamagotchi GitHub link
+### Tamagotchi GitHub link
 [Tamagotchi GitHub](https://github.com/JuanDavila1101/ASSIGNMENT-Tamagotchi)
+
+### The Version of this Tamagotchi Game looks something this:
+![Tamagotchi](./JID_tamagotchi.jpg)
+
+In this game of Tomagotchi, you can: Eat, Play, Fight and Sleep and will keep track of of those action per quadrant. by Hunger level, Fun level, Strenght level, and Energy level.
+
+## Class ReadME information bellow
 
 Remember Tamagotchi's?  They looked something like this:
 ![Tamagotchi](./tamagotchi.jpg)
